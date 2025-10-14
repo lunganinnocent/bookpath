@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "965444242125",
+    "firebase_url": "https://opsc-poe-db-f5ff7-default-rtdb.firebaseio.com",
+    "project_id": "opsc-poe-db-f5ff7",
+    "storage_bucket": "opsc-poe-db-f5ff7.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:965444242125:android:00bc361eeb97c902ce3784",
+        "android_client_info": {
+          "package_name": "com.example.bookpath"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAV9tUmVUhi8fSHW_aNANVhW8rombmVTeE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

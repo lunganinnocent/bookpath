@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <item
+        android:id="@+id/add_task"
+        android:title=""
+        android:icon="@drawable/add_task"
+        />
+    <item
+        android:id="@+id/task_dashboard"
+        android:title=""
+        android:icon="@drawable/add_task"
+        />
+
+    <item
+        android:id="@+id/home"
+        android:title=""
+        android:icon="@drawable/home"
+        />
+
+    <item
+        android:id="@+id/chat"
+        android:title=""
+        android:icon="@drawable/chat"
+        />
+
+
+
+</menu>
