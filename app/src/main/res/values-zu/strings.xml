@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BookPath</string>
+    <string name="welcome">Siyakwamukela</string>
+    <string name="profile">Iphrofayili</string>
+    <string name="change_password">Shintsha Iphasiwedi</string>
+    <string name="change_language">Shintsha Ulimi</string>
+    <string name="account_overview">Ukuqondiswa Kwe-akhawunti</string>
+    <string name="select_language">Khetha Ulimi</string>
+    <string name="english">IsiNgisi</string>
+    <string name="afrikaans">IsiBhunu</string>
+    <string name="zulu">IsiZulu</string>
+
+    <!-- Login Screen Strings -->
+    <string name="welcome_back">Wamukelekile Emuva</string>
+    <string name="email">I-imeyili</string>
+    <string name="enter_email">Faka i-imeyili yakho</string>
+    <string name="password">Iphasiwedi</string>
+    <string name="enter_password">Faka iphasiwedi yakho</string>
+    <string name="login">NGENA</string>
+    <string name="dont_have_account">Awunawo i-akhawunti?</string>
+    <string name="register">Bhalisa</string>
+
+    <!-- New strings for Profile layout -->
+    <string name="profile_picture">Isithombe sephrofayili</string>
+    <string name="username">Igama lomsebenzisi</string>
+    <string name="full_name">Igama Eliphelele</string>
+    <string name="account_settings">Izilungiselelo Ze-akhawunti</string>
+    <string name="logout">Phuma</string>
+
+    <!-- View Task Strings -->
+    <string name="task_title_default">Isihloko Somsebenzi</string>
+    <string name="category_label">Isigaba:</string>
+    <string name="category_default">Ukufunda</string>
+    <string name="status_label">Isimo:</string>
+    <string name="status_default">Iyasebenza</string>
+    <string name="start_date_label">Usuku Lokuqala:</string>
+    <string name="end_date_label">Usuku Lokuqeda:</string>
+    <string name="due_time_label">Isikhathi Sokuqeda:</string>
+    <string name="date_default">Asichazwanga</string>
+    <string name="time_default">Asichazwanga</string>
+    <string name="description_label">Incazelo</string>
+    <string name="description_default">Incazelo yomsebenzi iya lapha ngemininingwane yonke mayelana nokuthi yini okufanele yenziwe kulomsebenzi othile.</string>
+    <string name="document_label">Idokhumenti</string>
+    <string name="document_default">Ayikho idokhumenti enamathiselwe</string>
+    <string name="edit_button">HLELA</string>
+    <string name="delete_button">SUSA</string>
+    <string name="task_overview">Ukuqondiswa Komsebenzi</string>
+    <string name="no_tasks_message">Ayikho imisebenzi etholakele. Engeza umsebenzi wakho wokuqala!</string>
+    <string name="home">Ikhaya</string>
+    <string name="add_task">Engeza Umsebenzi</string>
+    <string name="tasks">Imisebenzi</string>
+    <string name="chat">Xoxa</string>
+</resources>

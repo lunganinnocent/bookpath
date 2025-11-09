@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BookPath</string>
+    <string name="welcome">Welkom</string>
+    <string name="profile">Profiel</string>
+    <string name="change_password">Verander Wagwoord</string>
+    <string name="change_language">Verander Taal</string>
+    <string name="account_overview">Rekening Oorsig</string>
+    <string name="select_language">Kies Taal</string>
+    <string name="english">Engels</string>
+    <string name="afrikaans">Afrikaans</string>
+    <string name="zulu">Zoeloe</string>
+
+    <!-- Login Screen Strings -->
+    <string name="welcome_back">Welkom Terug</string>
+    <string name="email">E-pos</string>
+    <string name="enter_email">Voer jou e-pos in</string>
+    <string name="password">Wagwoord</string>
+    <string name="enter_password">Voer jou wagwoord in</string>
+    <string name="login">TEEK IN</string>
+    <string name="dont_have_account">Het jy nie \'n rekening nie?</string>
+    <string name="register">REGISTREER</string>
+
+    <!-- New strings for Profile layout -->
+    <string name="profile_picture">Profiel prent</string>
+    <string name="username">Gebruikersnaam</string>
+    <string name="full_name">Volle Naam</string>
+    <string name="account_settings">Rekening Instellings</string>
+    <string name="logout">Teken uit</string>
+
+    <!-- View Task Strings -->
+    <string name="task_title_default">Taak Titel</string>
+    <string name="category_label">Kategorie:</string>
+    <string name="category_default">Studie</string>
+    <string name="status_label">Status:</string>
+    <string name="status_default">Aktief</string>
+    <string name="start_date_label">Begin Datum:</string>
+    <string name="end_date_label">Eind Datum:</string>
+    <string name="due_time_label">Sperdatum Tyd:</string>
+    <string name="date_default">Nie gestel nie</string>
+    <string name="time_default">Nie gestel nie</string>
+    <string name="description_label">Beskrywing</string>
+    <string name="description_default">Taak beskrywing gaan hier met al die besonderhede oor wat gedoen moet word vir hierdie spesifieke taak.</string>
+    <string name="document_label">Dokument</string>
+    <string name="document_default">Geen dokument aangeheg nie</string>
+    <string name="edit_button">WYSIG</string>
+    <string name="delete_button">VERWYDER</string>
+    <string name="task_overview">Taak Oorsig</string>
+    <string name="no_tasks_message">Geen take gevind nie. Voeg jou eerste taak by!</string>
+    <string name="home">Tuis</string>
+    <string name="add_task">Voeg Taak By</string>
+    <string name="tasks">Take</string>
+    <string name="chat">Gesels</string>
+</resources>

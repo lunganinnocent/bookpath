@@ -1,99 +1,239 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".AddTask">
+    android:background="@color/light_blue_gradient">
 
-
+    <!-- Scrollable content -->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:padding="16dp"
+        android:fillViewport="true">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="16dp">
+            android:orientation="vertical">
 
+            <!-- Header -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="24sp"
+                android:text="Add New Task"
+                android:textSize="20sp"
                 android:textStyle="bold"
-                android:text="Header Title" />
+                android:textColor="#4285F4"
+                android:gravity="center"
+                android:layout_marginBottom="16dp" />
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-
-    <EditText
-        android:id="@+id/TaskName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="23dp"
-        android:hint="Enter Task Name"/>
-
-       <TextView
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content"
-           android:id="@+id/tv_TextTime"
-           android:hint="Start Date"
-           android:textSize="17sp"
-           android:layout_margin="17dp"
-           android:textStyle="bold"
-           android:text="@tools:sample/date/ddmmyy"
-           />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/tv_TextTimeEnd"
-            android:hint="End Date"
-            android:textSize="17sp"
-            android:layout_margin="17dp"
-            android:textStyle="bold"
-            android:text="@tools:sample/date/ddmmyy"
-            />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/btn_TimePicker"
-            android:text="Select Time"/>
-
-
-
-        <EditText
-            android:id="@+id/Description"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Enter Task Description"
-            android:padding="23dp"
-            android:layout_margin="10dp"
-            />
-
-
-
-
-    </LinearLayout>
-
-            <Button
-                android:id="@+id/TaskSubmit"
-                android:layout_width="wrap_content"
+            <!-- Category -->
+            <TextView
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="end"
-                android:layout_marginEnd="23dp"
-                android:text="submit"/>
+                android:text="Category"
+                android:textColor="#4285F4"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="2dp" />
 
-</LinearLayout>
+            <EditText
+                android:id="@+id/categoryEdit"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Enter category"
+                android:background="@drawable/edittext_background"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textColor="#333333"
+                android:textSize="14sp"
+                android:layout_marginBottom="12dp" />
 
+            <!-- Description -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:textColor="#4285F4"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="2dp" />
 
-</ScrollView>
+            <EditText
+                android:id="@+id/descriptionEdit"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:hint="Enter task description"
+                android:background="@drawable/edittext_background"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:gravity="top"
+                android:textColor="#333333"
+                android:textSize="14sp"
+                android:inputType="textMultiLine"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Document Upload -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Document URL"
+                android:textColor="#4285F4"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="2dp" />
+
+            <EditText
+                android:id="@+id/documentEdit"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Paste document link"
+                android:background="@drawable/edittext_background"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textColor="#333333"
+                android:textSize="14sp"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Date and Time Row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+
+                <!-- Start Date -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="6dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Start Date"
+                        android:textColor="#4285F4"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="2dp" />
+
+                    <EditText
+                        android:id="@+id/startDateEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:hint="Select date"
+                        android:background="@drawable/edittext_background"
+                        android:paddingStart="12dp"
+                        android:paddingEnd="12dp"
+                        android:textColor="#333333"
+                        android:textSize="14sp"
+                        android:focusable="false"
+                        android:clickable="true" />
+
+                </LinearLayout>
+
+                <!-- End Date -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginStart="6dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="End Date"
+                        android:textColor="#4285F4"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="2dp" />
+
+                    <EditText
+                        android:id="@+id/endDateEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:hint="Select date"
+                        android:background="@drawable/edittext_background"
+                        android:paddingStart="12dp"
+                        android:paddingEnd="12dp"
+                        android:textColor="#333333"
+                        android:textSize="14sp"
+                        android:focusable="false"
+                        android:clickable="true" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Due Time -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Due Time"
+                android:textColor="#4285F4"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="2dp" />
+
+            <EditText
+                android:id="@+id/dueTimeEdit"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Select time"
+                android:background="@drawable/edittext_background"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textColor="#333333"
+                android:textSize="14sp"
+                android:focusable="false"
+                android:clickable="true"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Status -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Status"
+                android:textColor="#4285F4"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="2dp" />
+
+            <Spinner
+                android:id="@+id/statusSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/edittext_background"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Save Button -->
+            <Button
+                android:id="@+id/saveBtn"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="SAVE TASK"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:background="@drawable/button_blue_gradient"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Fixed Bottom Navigation -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/botttom_nav_menu"
+        android:background="#F5F5F5"
+        android:elevation="8dp" />
 
 </LinearLayout>

@@ -9,5 +9,15 @@
     <color name="Light_Blue">#ADD8E6</color>
     <color name="orange">#FFA500</color>
     <color name="blue">#0000FF</color>
+    <color name="red">#FF0000</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="Ocean_Blue">#00FFFF</color>
+    <color name="sky_Blue">#3BBEE1</color>
+    <color name="pink">#FFC0CB</color>
+    <color name="Medium_Sky_Blue">#86D7EA</color>
+    <color name="light_blue_gradient">#F0F8FF</color>
+
+
+
 
 </resources>

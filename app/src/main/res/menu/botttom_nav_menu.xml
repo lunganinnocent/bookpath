@@ -26,6 +26,12 @@
         android:icon="@drawable/chat"
         />
 
+    <item
+        android:id="@+id/profile"
+        android:title=""
+        android:icon="@drawable/profile"
+        />
+
 
 
 </menu>

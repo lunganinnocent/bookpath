@@ -6,94 +6,172 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/light_blue_gradient"
     tools:context=".Login">
 
+    <!-- Header with colored background - Made smaller -->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_gravity="center_horizontal"
-        android:background="@drawable/bp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:orientation="vertical"
-        android:paddingTop="300dp">
+        android:gravity="center"
+        android:background="@drawable/header_gradient"
+        android:paddingTop="30dp">
 
-        <EditText
-            android:id="@+id/fullname"
-            android:layout_width="300dp"
-            android:layout_height="44dp"
-            android:layout_gravity="center"
-            android:layout_marginBottom="23dp"
-            android:background="@color/semi_transparent_white"
-            android:gravity="center"
-            android:hint="Enter Fullname"
-            android:inputType="text"
-            android:textColor="@color/black"
-            android:textSize="24dp" />
-
-
-        <EditText
-            android:id="@+id/username"
-            android:layout_width="300dp"
-            android:layout_height="44dp"
-            android:layout_gravity="center"
-            android:layout_marginBottom="23dp"
-            android:background="@color/semi_transparent_white"
-            android:gravity="center"
-            android:hint="Enter Username"
-            android:inputType="text"
-            android:textColor="@color/black"
-            android:textSize="24dp" />
-
-
-        <EditText
-            android:id="@+id/email"
-            android:layout_width="300dp"
-            android:layout_height="44dp"
-            android:layout_gravity="center"
-            android:layout_marginBottom="23dp"
-            android:background="@color/semi_transparent_white"
-            android:gravity="center"
-            android:hint="Enter Email"
-            android:inputType="text"
-            android:textColor="@color/black"
-            android:textSize="24dp" />
-
-
-        <EditText
-            android:id="@+id/password"
-            android:layout_width="300dp"
-            android:layout_height="44dp"
-            android:layout_gravity="center"
-            android:layout_marginBottom="23dp"
-            android:background="@color/semi_transparent_white"
-            android:gravity="center"
-            android:hint="Enter Password"
-            android:inputType="text"
-            android:textSize="24dp" />
-
-        <Button
-            android:id="@+id/login"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:textColorHint="@color/white"
-            android:hint="Login" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/bp"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@android:color/white"
+            android:layout_marginBottom="15dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="Or Login With" />
+            android:text="@string/app_name"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"/>
 
-        <Button
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:textColorHint="@color/white"
-            android:text="Google" />
-
+            android:text="@string/welcome_back"
+            android:textSize="14sp"
+            android:textColor="#E0E0E0"
+            android:layout_marginTop="6dp"/>
 
     </LinearLayout>
 
+    <!-- Login Form Card - Made larger -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.2"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="6dp"
+        app:cardBackgroundColor="@android:color/white">
 
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="24dp"
+                android:gravity="center">
+
+                <!-- Email Field -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/email"
+                    android:textColor="#4285F4"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="6dp"/>
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/edittext_blue_border"
+                    android:gravity="center_vertical"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:hint="@string/enter_email"
+                    android:textColorHint="#999999"
+                    android:inputType="textEmailAddress"
+                    android:textColor="#333333"
+                    android:textSize="16sp"
+                    android:autofillHints="email"
+                    android:importantForAutofill="yes"/>
+
+                <!-- Password Field -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/password"
+                    android:textColor="#4285F4"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="6dp"/>
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="24dp"
+                    android:background="@drawable/edittext_blue_border"
+                    android:gravity="center_vertical"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:hint="@string/enter_password"
+                    android:textColorHint="#999999"
+                    android:inputType="textPassword"
+                    android:textColor="#333333"
+                    android:textSize="16sp"
+                    android:autofillHints="password"
+                    android:importantForAutofill="yes"/>
+
+                <!-- Login Button -->
+                <Button
+                    android:id="@+id/login"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:text="@string/login"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:background="@drawable/button_blue_gradient"
+                    android:textColor="@android:color/white"
+                    android:layout_marginBottom="20dp" />
+
+                <!-- Register Section - Fixed touch target -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:paddingVertical="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dont_have_account"
+                        android:textColor="#666666"
+                        android:textSize="15sp"/>
+
+                    <TextView
+                        android:id="@+id/register"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/register"
+                        android:textColor="#4285F4"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:padding="12dp"
+                        android:minWidth="48dp"
+                        android:minHeight="48dp"
+                        android:gravity="center"
+                        android:background="?attr/selectableItemBackground"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </androidx.cardview.widget.CardView>
 
 </LinearLayout>
